@@ -7,7 +7,7 @@ include_directories(include)
 # 查找./src目录下的所有源文件，保存到DIR_SRCS变量
 aux_source_directory(./src DIR_SRCS)
 # 用C++11
-add_definitions(-std=c++11)
+add_definitions(-std=c++11 -g)
 # 指定生成目标文件
 add_executable(threadpool ${DIR_SRCS})
 set(CMAKE_CXX_FLAGS "-I/usr/include/mysql")
